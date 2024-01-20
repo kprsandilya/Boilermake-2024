@@ -1,0 +1,292 @@
+Godot Engine v4.2.1.stable.official.b09f793f5 - https://godotengine.org
+Vulkan API 1.3.242 - Forward+ - Using Vulkan Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
+ 
+background:<TileMap#33571210442>
+<TileData#29192357173>
+(13, 8)
+<Object#null>
+(18, 23)
+<Object#null>
+(18, 41)
+<Object#null>
+(22, 59)
+<Object#null>
+(26, 64)
+<Object#null>
+(25, 64)
+<Object#null>
+(24, 64)
+<Object#null>
+(24, 64)
+<Object#null>
+(24, 64)
+<Object#null>
+(23, 64)
+<Object#null>
+(21, 64)
+<Object#null>
+(20, 64)
+<Object#null>
+(19, 64)
+<Object#null>
+(18, 64)
+<Object#null>
+(17, 64)
+<Object#null>
+(16, 64)
+<Object#null>
+(15, 64)
+<Object#null>
+(14, 64)
+<Object#null>
+(12, 64)
+<Object#null>
+(11, 64)
+<Object#null>
+(9, 64)
+<Object#null>
+(8, 64)
+<Object#null>
+(6, 64)
+<Object#null>
+(5, 64)
+<Object#null>
+(3, 64)
+<Object#null>
+(1, 64)
+<Object#null>
+(1, 64)
+<Object#null>
+(1, 64)
+<Object#null>
+(1, 62)
+<Object#null>
+(1, 61)
+<Object#null>
+(1, 60)
+<Object#null>
+(1, 58)
+<Object#null>
+(1, 56)
+<Object#null>
+(1, 54)
+<Object#null>
+(1, 52)
+<Object#null>
+(1, 50)
+<Object#null>
+(1, 48)
+<Object#null>
+(1, 46)
+<Object#null>
+(1, 45)
+<Object#null>
+(1, 44)
+<Object#null>
+(1, 42)
+<Object#null>
+(1, 40)
+<Object#null>
+(1, 39)
+<Object#null>
+(1, 37)
+<Object#null>
+(1, 36)
+<Object#null>
+(1, 34)
+<Object#null>
+(1, 33)
+<Object#null>
+(1, 31)
+<Object#null>
+(1, 30)
+<Object#null>
+(1, 29)
+<Object#null>
+(1, 27)
+<Object#null>
+(1, 26)
+<Object#null>
+(1, 24)
+<Object#null>
+(1, 23)
+<Object#null>
+(1, 21)
+<Object#null>
+(1, 19)
+<Object#null>
+(7, 19)
+<Object#null>
+(8, 19)
+<Object#null>
+(10, 19)
+<Object#null>
+(11, 19)
+<Object#null>
+(13, 19)
+<Object#null>
+(14, 19)
+<Object#null>
+(15, 19)
+<Object#null>
+(16, 19)
+<Object#null>
+(17, 19)
+<Object#null>
+(18, 19)
+<Object#null>
+(19, 19)
+<Object#null>
+(20, 19)
+<Object#null>
+(21, 19)
+<Object#null>
+(21, 19)
+<Object#null>
+(20, 19)
+<Object#null>
+(21, 19)
+<Object#null>
+(21, 19)
+<Object#null>
+(21, 19)
+<Object#null>
+(19, 19)
+<Object#null>
+(21, 20)
+<Object#null>
+(21, 21)
+<Object#null>
+(22, 21)
+<Object#null>
+(22, 21)
+<Object#null>
+(22, 21)
+<Object#null>
+(24, 21)
+<Object#null>
+(24, 21)
+<Object#null>
+(24, 21)
+<Object#null>
+(26, 21)
+<Object#null>
+(26, 21)
+<Object#null>
+(27, 21)
+<Object#null>
+(29, 21)
+<Object#null>
+(31, 21)
+<Object#null>
+(33, 21)
+<Object#null>
+(34, 21)
+<Object#null>
+(36, 21)
+<Object#null>
+(37, 21)
+<Object#null>
+(39, 21)
+<Object#null>
+(41, 21)
+<Object#null>
+(42, 21)
+<Object#null>
+(44, 21)
+<Object#null>
+(46, 21)
+<Object#null>
+(47, 21)
+<Object#null>
+(48, 21)
+<Object#null>
+(48, 20)
+<Object#null>
+(48, 19)
+<Object#null>
+(48, 18)
+<Object#null>
+(48, 16)
+<Object#null>
+(48, 15)
+<Object#null>
+(48, 14)
+<Object#null>
+(47, 14)
+<Object#null>
+(46, 14)
+<Object#null>
+(44, 14)
+<Object#null>
+(42, 14)
+<Object#null>
+(41, 14)
+<Object#null>
+(39, 14)
+<Object#null>
+(38, 14)
+<Object#null>
+(36, 14)
+<Object#null>
+(35, 14)
+<Object#null>
+(33, 14)
+<Object#null>
+(31, 14)
+<Object#null>
+(30, 14)
+<Object#null>
+(28, 14)
+<TileData#29192357173>
+(27, 14)
+<TileData#29192357173>
+(25, 14)
+<TileData#29192357173>
+(23, 14)
+<Object#null>
+(25, 14)
+<Object#null>
+(23, 14)
+<TileData#29192357173>
+(22, 14)
+<Object#null>
+(22, 14)
+<Object#null>
+(22, 14)
+<Object#null>
+(22, 14)
+<Object#null>
+(22, 14)
+<Object#null>
+(22, 14)
+<Object#null>
+(22, 14)
+<Object#null>
+(22, 14)
+<Object#null>
+(22, 14)
+<Object#null>
+(22, 14)
+<Object#null>
+(22, 14)
+<Object#null>
+(22, 14)
+<Object#null>
+(22, 14)
+<Object#null>
+(22, 14)
+<Object#null>
+(22, 14)
+<Object#null>
+(22, 14)
+<Object#null>
+(22, 14)
+<Object#null>
+(22, 14)
+<Object#null>
+(22, 14)
+<Object#null>
+(22, 14)
+<Object#null>
+(22, 14)

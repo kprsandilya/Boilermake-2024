@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://edwxq4wu7g2"]
+[gd_scene load_steps=9 format=3 uid="uid://fk64pjrfohmf"]
 
+[ext_resource type="Script" path="res://world.gd" id="1_ax3et"]
 [ext_resource type="Texture2D" uid="uid://bq5kxbpfmuj3w" path="res://farmingTilesheetComplete.png" id="1_rhk5s"]
-[ext_resource type="PackedScene" uid="uid://dtpvsiwa3astb" path="res://player.tscn" id="2_kc8gg"]
-[ext_resource type="PackedScene" path="res://HUD.tscn" id="3_dcpkf"]
+[ext_resource type="PackedScene" uid="uid://bu8bxh53007gi" path="res://player.tscn" id="2_kc8gg"]
+[ext_resource type="PackedScene" uid="uid://dnhgvbhf81ikv" path="res://HUD.tscn" id="3_dcpkf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dwlg6"]
 texture = ExtResource("1_rhk5s")
@@ -115,6 +116,7 @@ texture = ExtResource("1_rhk5s")
 6:7/0/terrains_peering_bit/top_left_corner = 0
 6:7/0/terrains_peering_bit/top_side = 0
 6:7/0/terrains_peering_bit/top_right_corner = 0
+6:7/0/custom_data_0 = true
 7:7/0 = 0
 8:7/0 = 0
 9:7/0 = 0
@@ -360,6 +362,7 @@ sources/0 = SubResource("TileSetAtlasSource_8tcif")
 
 [node name="world" type="Node2D"]
 position = Vector2(0, 1)
+script = ExtResource("1_ax3et")
 
 [node name="background" type="TileMap" parent="."]
 position = Vector2(129, 129)
