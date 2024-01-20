@@ -3,6 +3,7 @@ extends CharacterBody2D
 var speed = 50
 var motion = Vector2.ZERO
 
+# test comment
 func _physics_process(delta):
 	if Input.is_action_pressed("ui_right"):
 		$AnimatedSprite2D.play("sidewalk")
