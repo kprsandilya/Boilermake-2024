@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dtpvsiwa3astb"]
+[gd_scene load_steps=14 format=3 uid="uid://bu8bxh53007gi"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_38rr1"]
 [ext_resource type="Texture2D" uid="uid://bq5kxbpfmuj3w" path="res://farmingTilesheetComplete.png" id="2_jmikl"]
@@ -31,13 +31,16 @@ region = Rect2(112, 0, 16, 16)
 atlas = ExtResource("2_jmikl")
 region = Rect2(128, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_q4qgw"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_0mnor"]
+atlas = ExtResource("2_jmikl")
 region = Rect2(48, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_tlnvx"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_0g70o"]
+atlas = ExtResource("2_jmikl")
 region = Rect2(64, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ebw4s"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_1fqb0"]
+atlas = ExtResource("2_jmikl")
 region = Rect2(80, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pdsnk"]
@@ -80,13 +83,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_q4qgw")
+"texture": SubResource("AtlasTexture_0mnor")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_tlnvx")
+"texture": SubResource("AtlasTexture_0g70o")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ebw4s")
+"texture": SubResource("AtlasTexture_1fqb0")
 }],
 "loop": true,
 "name": &"upwalk",
@@ -99,6 +102,5 @@ script = ExtResource("1_38rr1")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pdsnk")
 animation = &"upwalk"
-frame_progress = 0.157393
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
