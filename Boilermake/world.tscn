@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ch5qj5v4lxqr2"]
+
+[ext_resource type="Texture2D" uid="uid://bq5kxbpfmuj3w" path="res://farmingTilesheetComplete.png" id="1_rhk5s"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vnx7j"]
+texture = ExtResource("1_rhk5s")
+
+[sub_resource type="TileSet" id="TileSet_7jy7p"]
+sources/0 = SubResource("TileSetAtlasSource_vnx7j")
+
+[node name="world" type="Node2D"]
+
+[node name="background" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_7jy7p")
+format = 2
+
+[node name="foreground" type="TileMap" parent="."]
+format = 2
