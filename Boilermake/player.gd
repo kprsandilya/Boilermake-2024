@@ -1,8 +1,11 @@
 extends CharacterBody2D
 
-@export var speed = 50 # How fast the player will move (pixels/sec).
+@export var speed = 400 # How fast the player will move (pixels/sec).
 var motion = Vector2.ZERO
 var screen_size # Size of the game window.
+var scaler = 6
+var xscaler = scaler * 5
+var yscaler = scaler * 7
 
 func _ready():
 	screen_size = get_viewport_rect().size
@@ -36,4 +39,4 @@ func _physics_process(delta):
 		motion.y = 0
 	velocity = motion
 	position += velocity * delta
-	position = position.clamp(Vector2(5,7), Vector2(screen_size.x -5, screen_size.y - 7))
+	position = position.clamp(Vector2(xscaler,yscaler), Vector2(screen_size.x - xscaler, screen_size.y - yscaler))

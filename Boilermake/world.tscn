@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://edwxq4wu7g2"]
+[gd_scene load_steps=6 format=3 uid="uid://fk64pjrfohmf"]
 
 [ext_resource type="Texture2D" uid="uid://bq5kxbpfmuj3w" path="res://farmingTilesheetComplete.png" id="1_rhk5s"]
-[ext_resource type="PackedScene" uid="uid://dtpvsiwa3astb" path="res://player.tscn" id="2_kc8gg"]
+[ext_resource type="PackedScene" uid="uid://bu8bxh53007gi" path="res://player.tscn" id="2_kc8gg"]
+[ext_resource type="PackedScene" uid="uid://dnhgvbhf81ikv" path="res://HUD.tscn" id="3_dcpkf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dwlg6"]
 texture = ExtResource("1_rhk5s")
@@ -183,3 +184,5 @@ layer_0/tile_data = PackedInt32Array(-65538, 786432, 5, -2, 786432, 5, 65534, 78
 format = 2
 
 [node name="player" parent="." instance=ExtResource("2_kc8gg")]
+
+[node name="CanvasLayer" parent="." instance=ExtResource("3_dcpkf")]
