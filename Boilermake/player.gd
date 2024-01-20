@@ -37,5 +37,3 @@ func _physics_process(delta):
 	velocity = motion
 	position += velocity * delta
 	position = position.clamp(Vector2(5,7), Vector2(screen_size.x -5, screen_size.y - 7))
-
-
