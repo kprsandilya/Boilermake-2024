@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bu8bxh53007gi"]
+[gd_scene load_steps=14 format=3 uid="uid://dtpvsiwa3astb"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_38rr1"]
 [ext_resource type="Texture2D" uid="uid://bq5kxbpfmuj3w" path="res://farmingTilesheetComplete.png" id="2_jmikl"]
@@ -104,6 +104,7 @@ position = Vector2(50, 50)
 script = ExtResource("1_38rr1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(182, 108)
 sprite_frames = SubResource("SpriteFrames_pdsnk")
 animation = &"sidewalk"
 frame_progress = 0.352295
