@@ -84,6 +84,7 @@ texture = ExtResource("1_rhk5s")
 10:5/0 = 0
 11:5/0 = 0
 12:5/0 = 0
+12:5/0/custom_data_0 = true
 0:6/0 = 0
 1:6/0 = 0
 2:6/0 = 0
@@ -104,6 +105,16 @@ texture = ExtResource("1_rhk5s")
 4:7/0 = 0
 5:7/0 = 0
 6:7/0 = 0
+6:7/0/terrain_set = 0
+6:7/0/terrain = 0
+6:7/0/terrains_peering_bit/right_side = 0
+6:7/0/terrains_peering_bit/bottom_right_corner = 0
+6:7/0/terrains_peering_bit/bottom_side = 0
+6:7/0/terrains_peering_bit/bottom_left_corner = 0
+6:7/0/terrains_peering_bit/left_side = 0
+6:7/0/terrains_peering_bit/top_left_corner = 0
+6:7/0/terrains_peering_bit/top_side = 0
+6:7/0/terrains_peering_bit/top_right_corner = 0
 7:7/0 = 0
 8:7/0 = 0
 9:7/0 = 0
@@ -171,6 +182,11 @@ texture = ExtResource("1_rhk5s")
 9:12/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_xiklo"]
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "dirt"
+terrain_set_0/terrain_0/color = Color(0.121569, 0.364706, 0.745098, 1)
+custom_data_layer_0/name = "can_till"
+custom_data_layer_0/type = 1
 sources/0 = SubResource("TileSetAtlasSource_dwlg6")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8tcif"]
