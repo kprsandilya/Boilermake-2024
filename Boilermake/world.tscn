@@ -343,6 +343,7 @@ texture = ExtResource("1_rhk5s")
 sources/0 = SubResource("TileSetAtlasSource_8tcif")
 
 [node name="world" type="Node2D"]
+position = Vector2(0, 1)
 
 [node name="background" type="TileMap" parent="."]
 position = Vector2(129, 129)
