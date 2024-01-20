@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://fk64pjrfohmf"]
+[gd_scene load_steps=5 format=3 uid="uid://edwxq4wu7g2"]
 
 [ext_resource type="Texture2D" uid="uid://bq5kxbpfmuj3w" path="res://farmingTilesheetComplete.png" id="1_rhk5s"]
-[ext_resource type="PackedScene" uid="uid://bu8bxh53007gi" path="res://player.tscn" id="2_kc8gg"]
+[ext_resource type="PackedScene" uid="uid://dtpvsiwa3astb" path="res://player.tscn" id="2_kc8gg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dwlg6"]
 texture = ExtResource("1_rhk5s")
