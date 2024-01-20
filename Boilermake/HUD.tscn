@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dnhgvbhf81ikv"]
+[gd_scene load_steps=8 format=3 uid="uid://dnhgvbhf81ikv"]
 
 [ext_resource type="FontFile" uid="uid://c46fpp04jbyr2" path="res://Xolonium-Regular.ttf" id="1_13yca"]
 [ext_resource type="Script" path="res://HUD.gd" id="1_spcts"]
@@ -14,6 +14,9 @@ bg_color = Color(0.6, 0.6, 0.6, 0.384314)
 shadow_color = Color(0, 0, 0, 0.588235)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wpv6c"]
+bg_color = Color(0.6, 0.6, 0.6, 0.588235)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cwrp5"]
 bg_color = Color(0.6, 0.6, 0.6, 0.588235)
 
 [node name="HUD" type="CanvasLayer"]
@@ -75,5 +78,15 @@ text = "Day:"
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 10.0
+
+[node name="Shop" type="MenuButton" parent="."]
+offset_top = 64.0
+offset_right = 192.0
+offset_bottom = 120.0
+theme_override_fonts/font = ExtResource("1_13yca")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_cwrp5")
+text = "Shop"
+flat = false
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
