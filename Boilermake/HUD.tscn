@@ -5,6 +5,15 @@
 [ext_resource type="Script" path="res://ShopLayer.gd" id="3_k6b8g"]
 [ext_resource type="Script" path="res://Help.gd" id="4_gjk73"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e3qfc"]
+bg_color = Color(0.6, 0.6, 0.6, 0.580392)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_53om6"]
+bg_color = Color(0.415686, 0.415686, 0.415686, 0.588235)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_do3bd"]
+bg_color = Color(0.309804, 0.309804, 0.309804, 0.588235)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_37tyo"]
 bg_color = Color(0.6, 0.6, 0.6, 0.588235)
 
@@ -18,15 +27,6 @@ shadow_color = Color(0, 0, 0, 0.588235)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wpv6c"]
 bg_color = Color(0.6, 0.6, 0.6, 0.588235)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e3qfc"]
-bg_color = Color(0.6, 0.6, 0.6, 0.580392)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_53om6"]
-bg_color = Color(0.415686, 0.415686, 0.415686, 0.588235)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_do3bd"]
-bg_color = Color(0.309804, 0.309804, 0.309804, 0.588235)
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8f402"]
 bg_color = Color(0.741176, 0.741176, 0.741176, 0.560784)
 
@@ -36,16 +36,18 @@ bg_color = Color(0.803922, 0.945098, 0.94902, 1)
 [node name="HUD" type="CanvasLayer" groups=["HUD"]]
 script = ExtResource("1_spcts")
 
-[node name="Name" type="Label" parent="." groups=["HUD"]]
+[node name="Name2" type="Button" parent="." groups=["HUD"]]
 offset_left = 1344.0
 offset_top = 10.0
-offset_right = 1537.0
+offset_right = 1564.0
 offset_bottom = 88.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = SubResource("StyleBoxFlat_37tyo")
-text = "Name"
-vertical_alignment = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_e3qfc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_53om6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_do3bd")
+text = "Timmy/Tia"
 
 [node name="Money" type="Label" parent="." groups=["HUD"]]
 anchors_preset = 7
@@ -652,6 +654,8 @@ script = ExtResource("4_gjk73")
 offset_right = 1920.0
 offset_bottom = 1080.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_8f402")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="HelpMenu" type="Label" parent="Help" groups=["HUD"]]
 anchors_preset = 8
@@ -712,6 +716,7 @@ theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
 
+[connection signal="pressed" from="Name2" to="." method="_on_name_2_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="Shop" to="ShopLayer" method="_on_shop_pressed"]
 [connection signal="pressed" from="HelpButton" to="Help" method="_on_help_button_pressed"]

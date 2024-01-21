@@ -1,6 +1,8 @@
 extends CanvasLayer
 
 var day = 0
+var char_name = "Timmy"
+var nameId = 0;
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -15,3 +17,15 @@ func _process(delta):
 
 func _on_timer_timeout():
 	day += 1
+
+func get_char_name():
+	return char_name
+
+func _on_name_2_pressed():
+	if (nameId == 0):
+		char_name = "Tia"
+		nameId = 1
+	else:
+		char_name = "Timmy"
+		nameId = 0
+	get_tree().call_group("HUD", "set_new_name", char_name)

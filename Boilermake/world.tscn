@@ -434,6 +434,6 @@ scale = Vector2(4, 4)
 tile_set = SubResource("TileSet_3ebne")
 format = 2
 
-[node name="player" parent="." groups=["HUD"] instance=ExtResource("2_kc8gg")]
+[node name="player" parent="." instance=ExtResource("2_kc8gg")]
 
 [node name="CanvasLayer" parent="." instance=ExtResource("3_dcpkf")]
