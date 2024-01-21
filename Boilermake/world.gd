@@ -40,7 +40,7 @@ func _input(event):
 	if Input.is_action_just_pressed("fertilize"):
 		tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
 		source_id = 0
-		atlas_coord = Vector2i(6, 8)
+		atlas_coord = Vector2i(6, 9)
 		
 		if tile_data:
 			var can_fertilize = tile_data.get_custom_data(can_fertilize_custom_data)
@@ -49,9 +49,8 @@ func _input(event):
 			
 	elif Input.is_action_just_pressed("plant_corn"):
 		tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
-		
 		source_id = 0
-		atlas_coord = Vector2i(6,8)
+		atlas_coord = Vector2i(8, 7)
 		
 		if tile_data:
 			var can_seed_corn = tile_data.get_custom_data(can_seed_corn_custom_data)
