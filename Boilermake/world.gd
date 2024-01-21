@@ -7,6 +7,7 @@ var ground_layer = 0
 @onready var player_tile_pos : Vector2i = background.local_to_map($player.position)
 
 var can_till_custom_data = "can_till"
+var can_fertilize_custom_data = "can_fertilize"
 var can_seed_corn_custom_data = "can_seed_corn"
 
 # Called when the node enters the scene tree for the first time.
@@ -35,6 +36,15 @@ func _input(event):
 		if tile_data:
 			var can_till = tile_data.get_custom_data(can_till_custom_data)
 			if can_till:
+				background.set_cell(ground_layer, player_tile_pos, source_id, atlas_coord)
+	if Input.is_action_just_pressed("fertilize"):
+		tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
+		source_id = 0
+		atlas_coord = Vector2i(6, 8)
+		
+		if tile_data:
+			var can_fertilize = tile_data.get_custom_data(can_fertilize_custom_data)
+			if can_fertilize:
 				background.set_cell(ground_layer, player_tile_pos, source_id, atlas_coord)
 			
 	elif Input.is_action_just_pressed("plant_corn"):
