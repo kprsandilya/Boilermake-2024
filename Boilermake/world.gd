@@ -40,9 +40,6 @@ func time():
 	else:
 		$background.set_layer_enabled(1, false)
 		
-func _on_timer_timeout():
-	$background.set_layer_enabled(1, true)
-	$Timer.start()
 
 func subtract(amount):
 	if (player_1_money - amount >= 0):
