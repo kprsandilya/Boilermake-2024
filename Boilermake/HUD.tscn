@@ -665,7 +665,23 @@ offset_right = 612.0
 offset_bottom = 272.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 16
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_aurl8")
+text = "
+
+	     - Sell crops to make money!
+	     - Till any area with soil using T.
+	     - You need money to acquire resources such as fertilizers and crop seeds from the shop.
+	     - After buying fertilizer, use the F key to fertilize the soil.
+	     - Buy seeds of your choice and plant them in the fertilizer with the first five number keys.
+	     - Press W to water seeds. 
+	     - When the plants grow to their final stage, press H to harvest. Be quick, as the plants will disappear after a certain time!
+	     - If you have enough money, you can buy prestige. This will exponentially increase earnings.
+	     - It will rain at random intervals, halving the amount of time it takes for plants to grow. 
+	     - That's it, you're all set to play! Happy harvesting!"
+autowrap_mode = 3
 
 [node name="Help" type="Label" parent="Help" groups=["HUD"]]
 offset_left = 360.0
