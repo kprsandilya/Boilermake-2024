@@ -2,7 +2,7 @@
 
 ## Group Members
 
-Sandi Kambhampati, Shivam Patel, Sharan Suthaharan
+Sandi Kambhampati, Shivam Patel, Shahan Suthaharan
 
 ## How To Play
 
