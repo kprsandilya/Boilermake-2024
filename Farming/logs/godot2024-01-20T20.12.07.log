@@ -1,5 +1,3 @@
 Godot Engine v4.2.1.stable.official.b09f793f5 - https://godotengine.org
 Vulkan API 1.3.242 - Forward+ - Using Vulkan Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
  
-USER ERROR: Node not found: "./Col1-7" (relative to "/root/world/CanvasLayer/ShopLayer").
-   at: get_node (scene/main/node.cpp:1638)

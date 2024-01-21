@@ -37,12 +37,33 @@ script = ExtResource("1_spcts")
 
 [node name="Name" type="Label" parent="."]
 offset_left = 1344.0
+offset_top = 10.0
 offset_right = 1537.0
-offset_bottom = 78.0
+offset_bottom = 88.0
 theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_37tyo")
 text = "Name"
+vertical_alignment = 1
+
+[node name="Name2" type="Label" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 216.0
+offset_top = -130.0
+offset_right = 416.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_13yca")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_37tyo")
+text = "Money: 
+Prestige: "
+vertical_alignment = 1
 
 [node name="Tools" type="Label" parent="."]
 anchors_preset = 7
@@ -50,9 +71,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -288.0
-offset_top = -120.0
-offset_right = 288.0
+offset_left = -384.0
+offset_top = -130.0
+offset_right = 192.0
+offset_bottom = -10.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("1_13yca")
@@ -64,9 +86,10 @@ text = "TOOLS"
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = -236.0
-offset_right = 192.0
-offset_bottom = 88.0
+offset_left = 10.0
+offset_top = -264.5
+offset_right = 230.0
+offset_bottom = 75.5
 grow_vertical = 2
 size_flags_horizontal = 4
 theme_override_constants/line_spacing = 18
@@ -75,26 +98,30 @@ theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_ncnga")
 text = "Controls
 T - Till
-H - Harvest
-P - Plant
+F - Fertilize
+Plant - Tools
 W - Water
-F - Fertilize"
+H - Harvest"
+autowrap_mode = 3
 
 [node name="Time" type="Label" parent="."]
-offset_left = 1600.0
-offset_right = 1920.0
-offset_bottom = 78.0
+offset_left = 1570.0
+offset_top = 10.0
+offset_right = 1910.0
+offset_bottom = 88.0
 theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_wpv6c")
 text = "Day:"
+vertical_alignment = 1
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 10.0
 
 [node name="Shop" type="Button" parent="."]
+offset_left = 10.0
 offset_top = 640.0
-offset_right = 192.0
+offset_right = 230.0
 offset_bottom = 704.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_13yca")
@@ -108,8 +135,10 @@ text = "Shop"
 script = ExtResource("3_k6b8g")
 
 [node name="Menu" type="Label" parent="ShopLayer"]
-offset_right = 1920.0
-offset_bottom = 1080.0
+offset_left = 1040.0
+offset_top = 1216.0
+offset_right = 2960.0
+offset_bottom = 2296.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_8f402")
 
 [node name="Shop" type="Label" parent="ShopLayer"]

@@ -11,7 +11,7 @@ func update_score(score):
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	update_score("Day: " + str(day) + " Time: " + str($Timer.get_time_left()))
+	update_score("Day: " + str(day) + " Time: " + str(snapped($Timer.get_time_left(), 0.001)))
 	#update_score($Timer.)
 
 
