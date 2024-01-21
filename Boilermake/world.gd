@@ -32,8 +32,17 @@ var total_time = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
-	pass
+	$Timer.start()
+
+func time():
+	if ($Timer.get_time_left() < 1.05):
+		$background.set_layer_enabled(1, true)
+	else:
+		$background.set_layer_enabled(1, false)
+		
+func _on_timer_timeout():
+	$background.set_layer_enabled(1, true)
+	$Timer.start()
 
 func subtract(amount):
 	if (player_1_money - amount >= 0):
@@ -55,6 +64,7 @@ func subtract(amount):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	_input(delta)
+	time()
 	var nodes = get_tree().get_nodes_in_group("HUD")
 	for node in nodes:
 		if node.has_method("get_prestige") && prestige < node.get_prestige():
@@ -67,6 +77,17 @@ func _input(event):
 	var tile_data : TileData = background.get_cell_tile_data(ground_layer, player_tile_pos)
 	var source_id = 0
 	var atlas_coord = Vector2i(0,0)
+	
+	var enable = get_tree().create_timer(.9)
+	
+	var loop_number = 1
+	
+	#if $Timer.timeout():
+		#loop_number += 1
+		#$background.set_layer_enabled(1, true)
+		#await enable.timeout
+	#else:
+		#$background.set_layer_enabled(1, false)
 	
 	if Input.is_action_just_pressed("till"):
 		
