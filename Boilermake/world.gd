@@ -95,8 +95,8 @@ func _input(event):
 		var stage_4 = Vector2i(7,8)
 		var stage_5 = Vector2i(6, 7)
 		var stages = [stage_1, stage_2, stage_3, stage_4, stage_5]
-		var corn_tile_pos = background.local_to_map(position)
-		
+		#var corn_tile_pos = background.local_to_map(player.position)
+		var corn_tile_pos = player_tile_pos
 		
 		
 		if tile_data:
