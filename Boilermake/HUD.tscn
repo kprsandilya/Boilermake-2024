@@ -46,7 +46,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_37tyo")
 text = "Name"
 vertical_alignment = 1
 
-[node name="Name2" type="Label" parent="."]
+[node name="Money" type="Label" parent="."]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -58,12 +58,12 @@ offset_right = 416.0
 offset_bottom = -10.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_constants/line_spacing = 29
 theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = SubResource("StyleBoxFlat_37tyo")
 text = "Money: 
 Prestige: "
-vertical_alignment = 1
 
 [node name="Tools" type="Label" parent="."]
 anchors_preset = 7
@@ -135,10 +135,10 @@ text = "Shop"
 script = ExtResource("3_k6b8g")
 
 [node name="Menu" type="Label" parent="ShopLayer"]
-offset_left = 1040.0
-offset_top = 1216.0
-offset_right = 2960.0
-offset_bottom = 2296.0
+offset_left = 552.0
+offset_top = 1072.0
+offset_right = 2472.0
+offset_bottom = 2152.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_8f402")
 
 [node name="Shop" type="Label" parent="ShopLayer"]
@@ -471,6 +471,132 @@ grow_vertical = 2
 theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
+
+[node name="Item1" type="Label" parent="ShopLayer"]
+offset_left = 368.0
+offset_top = 360.0
+offset_right = 584.0
+offset_bottom = 404.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Item2" type="Label" parent="ShopLayer"]
+offset_left = 368.0
+offset_top = 440.0
+offset_right = 584.0
+offset_bottom = 484.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Item3" type="Label" parent="ShopLayer"]
+offset_left = 368.0
+offset_top = 512.0
+offset_right = 584.0
+offset_bottom = 556.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Item4" type="Label" parent="ShopLayer"]
+offset_left = 368.0
+offset_top = 584.0
+offset_right = 584.0
+offset_bottom = 628.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Item5" type="Label" parent="ShopLayer"]
+offset_left = 368.0
+offset_top = 656.0
+offset_right = 584.0
+offset_bottom = 700.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Item6" type="Label" parent="ShopLayer"]
+offset_left = 368.0
+offset_top = 728.0
+offset_right = 584.0
+offset_bottom = 772.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Item7" type="Label" parent="ShopLayer"]
+offset_left = 776.0
+offset_top = 360.0
+offset_right = 992.0
+offset_bottom = 404.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Item8" type="Label" parent="ShopLayer"]
+offset_left = 784.0
+offset_top = 440.0
+offset_right = 1000.0
+offset_bottom = 484.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Item9" type="Label" parent="ShopLayer"]
+offset_left = 784.0
+offset_top = 512.0
+offset_right = 1000.0
+offset_bottom = 556.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Item10" type="Label" parent="ShopLayer"]
+offset_left = 784.0
+offset_top = 584.0
+offset_right = 1000.0
+offset_bottom = 628.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Item11" type="Label" parent="ShopLayer"]
+offset_left = 784.0
+offset_top = 656.0
+offset_right = 1000.0
+offset_bottom = 700.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Item12" type="Label" parent="ShopLayer"]
+offset_left = 784.0
+offset_top = 728.0
+offset_right = 1000.0
+offset_bottom = 772.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Item13" type="Label" parent="ShopLayer"]
+offset_left = 1186.0
+offset_top = 360.0
+offset_right = 1402.0
+offset_bottom = 404.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Item14" type="Label" parent="ShopLayer"]
+offset_left = 1186.0
+offset_top = 440.0
+offset_right = 1402.0
+offset_bottom = 484.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Item15" type="Label" parent="ShopLayer"]
+offset_left = 1186.0
+offset_top = 512.0
+offset_right = 1402.0
+offset_bottom = 556.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Item16" type="Label" parent="ShopLayer"]
+offset_left = 1186.0
+offset_top = 584.0
+offset_right = 1402.0
+offset_bottom = 628.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Item17" type="Label" parent="ShopLayer"]
+offset_left = 1186.0
+offset_top = 656.0
+offset_right = 1402.0
+offset_bottom = 700.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Item18" type="Label" parent="ShopLayer"]
+offset_left = 1186.0
+offset_top = 728.0
+offset_right = 1402.0
+offset_bottom = 772.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="Shop" to="ShopLayer" method="_on_shop_pressed"]

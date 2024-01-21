@@ -17,4 +17,3 @@ func _process(delta):
 
 func _on_timer_timeout():
 	day += 1
-
