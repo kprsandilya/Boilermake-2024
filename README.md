@@ -14,4 +14,5 @@ Sandi Kambhampati, Shivam Patel, Shahan Suthaharan
  - Press W to water these seeds. You do not need to buy water.
  - Once the plants grow to their final stage, press H to harvest them for money. However, you need to be quick, as the plants will disappear after a certain time!
  - If you have enough money, you can buy levels of prestige. This will exponentially increase any earnings from harvesting.
+ - It will rain at random intervals, halving the amount of time it takes for plants to grow. Stay on your toes!
  - That's it, you're all set to play! Happy harvesting!
