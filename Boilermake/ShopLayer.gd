@@ -101,13 +101,13 @@ func _on_shop_pressed():
 	self.show()
 	get_node("../Timer").set_paused(true)
 
+func get_prestige():
+	return prestige
 
 func _on_hide_pressed():
 	self.hide()
 	get_node("../Timer").set_paused(false)
 
-func add_money(amount):
-	player_1_money += amount
 
 func _on_col_11_pressed():
 	get_tree().call_group("world", "subtract", name_array[0].to_int())
