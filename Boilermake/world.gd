@@ -49,6 +49,11 @@ func subtract(amount):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	_input(delta)
+	var nodes = get_tree().get_nodes_in_group("HUD")
+	for node in nodes:
+		if node.has_method("get_prestige"):
+			prestige = node.get_prestige()
+			print(prestige)
 
 func _input(event):
 	total_time += str(event).to_float()

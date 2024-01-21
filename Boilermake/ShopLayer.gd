@@ -101,6 +101,8 @@ func _on_shop_pressed():
 	self.show()
 	get_node("../Timer").set_paused(true)
 
+func get_prestige():
+	return prestige
 
 func _on_hide_pressed():
 	self.hide()
