@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-var day = 0
+var day = 99
 var char_name = "Timmy"
 var nameId = 0;
 
@@ -14,9 +14,18 @@ func update_score(score):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	update_score("Day: " + str(day) + " Time: " + str(snapped($Timer.get_time_left(), 0.001)))
+	_input(delta)
 
 func _on_timer_timeout():
 	day += 1
+
+func _input(event):
+	if day >= 100:
+		$Finish.show()
+		if Input.is_action_pressed("ui_cancel"):
+			get_tree().quit()
+	else:
+		$Finish.hide()
 
 func get_char_name():
 	return char_name

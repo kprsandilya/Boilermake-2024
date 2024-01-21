@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dnhgvbhf81ikv"]
+[gd_scene load_steps=15 format=3 uid="uid://dnhgvbhf81ikv"]
 
 [ext_resource type="FontFile" uid="uid://c46fpp04jbyr2" path="res://Xolonium-Regular.ttf" id="1_13yca"]
 [ext_resource type="Script" path="res://HUD.gd" id="1_spcts"]
@@ -32,6 +32,9 @@ bg_color = Color(0.741176, 0.741176, 0.741176, 0.560784)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aurl8"]
 bg_color = Color(0.803922, 0.945098, 0.94902, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uoesy"]
+bg_color = Color(0.933333, 0.933333, 0.933333, 1)
 
 [node name="HUD" type="CanvasLayer" groups=["HUD"]]
 script = ExtResource("1_spcts")
@@ -163,6 +166,75 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_e3qfc")
 theme_override_styles/hover = SubResource("StyleBoxFlat_53om6")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_do3bd")
 text = "Help?"
+
+[node name="Help" type="CanvasLayer" parent="."]
+script = ExtResource("4_gjk73")
+
+[node name="Menu" type="Label" parent="Help" groups=["HUD"]]
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8f402")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HelpMenu" type="Label" parent="Help" groups=["HUD"]]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -612.0
+offset_top = -272.0
+offset_right = 612.0
+offset_bottom = 272.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 16
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_aurl8")
+text = "
+
+	     - Sell crops to make money!
+	     - Till any area with soil using T.
+	     - You need money to acquire resources such as fertilizers and crop seeds from the shop.
+	     - After buying fertilizer, use the F key to fertilize the soil.
+	     - Buy seeds of your choice and plant them in the fertilizer with the first five number keys.
+	     - Press W to water seeds. 
+	     - When the plants grow to their final stage, press H to harvest. Be quick, as the plants will disappear after a certain time!
+	     - If you have enough money, you can buy prestige. This will exponentially increase earnings.
+	     - It will rain at random intervals, halving the amount of time it takes for plants to grow. 
+	     - That's it, you're all set to play! Happy harvesting!"
+autowrap_mode = 3
+
+[node name="Help" type="Label" parent="Help" groups=["HUD"]]
+offset_left = 360.0
+offset_top = 280.0
+offset_right = 528.0
+offset_bottom = 336.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_13yca")
+theme_override_font_sizes/font_size = 48
+text = "Help"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Hide" type="Button" parent="Help" groups=["HUD"]]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 520.0
+offset_top = -268.0
+offset_right = 608.0
+offset_bottom = -224.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_13yca")
+theme_override_font_sizes/font_size = 16
+text = "Hide"
 
 [node name="ShopLayer" type="CanvasLayer" parent="." groups=["HUD"]]
 script = ExtResource("3_k6b8g")
@@ -647,79 +719,24 @@ offset_bottom = 772.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 vertical_alignment = 1
 
-[node name="Help" type="CanvasLayer" parent="."]
-script = ExtResource("4_gjk73")
-
-[node name="Menu" type="Label" parent="Help" groups=["HUD"]]
+[node name="Finish" type="Label" parent="."]
 offset_right = 1920.0
 offset_bottom = 1080.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_8f402")
+theme_override_colors/font_color = Color(0.901961, 0.760784, 0.807843, 1)
+theme_override_fonts/font = ExtResource("1_13yca")
+theme_override_font_sizes/font_size = 84
+theme_override_styles/normal = SubResource("StyleBoxFlat_uoesy")
+text = "THE END
+Thank You for Playing!
+Press Esc to Exit"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="HelpMenu" type="Label" parent="Help" groups=["HUD"]]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -612.0
-offset_top = -272.0
-offset_right = 612.0
-offset_bottom = 272.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_constants/line_spacing = 16
-theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = SubResource("StyleBoxFlat_aurl8")
-text = "
-
-	     - Sell crops to make money!
-	     - Till any area with soil using T.
-	     - You need money to acquire resources such as fertilizers and crop seeds from the shop.
-	     - After buying fertilizer, use the F key to fertilize the soil.
-	     - Buy seeds of your choice and plant them in the fertilizer with the first five number keys.
-	     - Press W to water seeds. 
-	     - When the plants grow to their final stage, press H to harvest. Be quick, as the plants will disappear after a certain time!
-	     - If you have enough money, you can buy prestige. This will exponentially increase earnings.
-	     - It will rain at random intervals, halving the amount of time it takes for plants to grow. 
-	     - That's it, you're all set to play! Happy harvesting!"
-autowrap_mode = 3
-
-[node name="Help" type="Label" parent="Help" groups=["HUD"]]
-offset_left = 360.0
-offset_top = 280.0
-offset_right = 528.0
-offset_bottom = 336.0
-size_flags_horizontal = 4
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("1_13yca")
-theme_override_font_sizes/font_size = 48
-text = "Help"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Hide" type="Button" parent="Help" groups=["HUD"]]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 520.0
-offset_top = -268.0
-offset_right = 608.0
-offset_bottom = -224.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("1_13yca")
-theme_override_font_sizes/font_size = 16
-text = "Hide"
 
 [connection signal="pressed" from="Name2" to="." method="_on_name_2_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="Shop" to="ShopLayer" method="_on_shop_pressed"]
 [connection signal="pressed" from="HelpButton" to="Help" method="_on_help_button_pressed"]
+[connection signal="pressed" from="Help/Hide" to="Help" method="_on_hide_pressed"]
 [connection signal="pressed" from="ShopLayer/Hide" to="ShopLayer" method="_on_hide_pressed"]
 [connection signal="pressed" from="ShopLayer/Col1-1" to="ShopLayer" method="_on_col_11_pressed"]
 [connection signal="pressed" from="ShopLayer/Col1-2" to="ShopLayer" method="_on_col_12_pressed"]
@@ -739,4 +756,3 @@ text = "Hide"
 [connection signal="pressed" from="ShopLayer/Col3-4" to="ShopLayer" method="_on_col_34_pressed"]
 [connection signal="pressed" from="ShopLayer/Col3-5" to="ShopLayer" method="_on_col_35_pressed"]
 [connection signal="pressed" from="ShopLayer/Col3-6" to="ShopLayer" method="_on_col_36_pressed"]
-[connection signal="pressed" from="Help/Hide" to="Help" method="_on_hide_pressed"]
