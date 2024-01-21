@@ -1,8 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://edwxq4wu7g2"]
+[gd_scene load_steps=9 format=3 uid="uid://fk64pjrfohmf"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_ax3et"]
 [ext_resource type="Texture2D" uid="uid://bq5kxbpfmuj3w" path="res://farmingTilesheetComplete.png" id="1_rhk5s"]
-[ext_resource type="PackedScene" uid="uid://dtpvsiwa3astb" path="res://player.tscn" id="2_kc8gg"]
+[ext_resource type="PackedScene" uid="uid://bu8bxh53007gi" path="res://player.tscn" id="2_kc8gg"]
 [ext_resource type="PackedScene" uid="uid://dnhgvbhf81ikv" path="res://HUD.tscn" id="3_dcpkf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dwlg6"]
