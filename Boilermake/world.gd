@@ -24,7 +24,7 @@ var can_harvest_turnip_custom_data = "can_harvest_turnip"
 var can_harvest_cabbage_custom_data = "can_harvest_cabbage"
 var can_harvest_strawberry_custom_data = "can_harvest_strawberry"
 
-var player_1_money = 10000000
+var player_1_money = 70
 var fertilizer = 0
 var prestige = 0
 var seed_array = [0,0,0,0,0]

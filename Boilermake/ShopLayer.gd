@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-var player_1_money = 10000000;
+var player_1_money = 70;
 
 var fertilizer = 0
 var prestige = 0
