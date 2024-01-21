@@ -34,11 +34,11 @@ var total_time = 0
 func _ready():
 	$Timer.start()
 
-#func time():
-	#if ($Timer.get_time_left() < 10.5):
-		#$background.set_layer_enabled(1, true)
-	#else:
-		#$background.set_layer_enabled(1, false)
+func time():
+	if ($Timer.get_time_left() < 10.5):
+		$background.set_layer_enabled(1, true)
+	else:
+		$background.set_layer_enabled(1, false)
 		
 
 func subtract(amount):
@@ -61,7 +61,7 @@ func subtract(amount):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	_input(delta)
-	#time()
+	time()
 	var nodes = get_tree().get_nodes_in_group("HUD")
 	for node in nodes:
 		if node.has_method("get_prestige") && prestige < node.get_prestige():
