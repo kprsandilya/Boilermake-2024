@@ -14,6 +14,6 @@ func _process(delta):
 	update_score("Day: " + str(day) + " Time: " + str(snapped($Timer.get_time_left(), 0.001)))
 	#update_score($Timer.)
 
-
 func _on_timer_timeout():
 	day += 1
+

@@ -12,10 +12,15 @@ var can_seed_corn_custom_data = "can_seed_corn"
 var can_seed_carrot_custom_data = "can_seed_carrot"
 var can_seed_turnip_custom_data = "can_seed_turnip"
 
+var player_1_money = 100
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	print(player_1_money)
 
+func subtract(amount):
+	if (player_1_money - amount >= 0):
+		player_1_money -= amount
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

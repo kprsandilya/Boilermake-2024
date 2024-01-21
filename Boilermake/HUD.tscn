@@ -601,7 +601,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="Shop" to="ShopLayer" method="_on_shop_pressed"]
 [connection signal="pressed" from="ShopLayer/Hide" to="ShopLayer" method="_on_hide_pressed"]
-[connection signal="pressed" from="ShopLayer/Col1-1" to="ShopLayer" method="_on_hide_pressed"]
+[connection signal="pressed" from="ShopLayer/Col1-1" to="ShopLayer" method="_on_col_11_pressed"]
 [connection signal="pressed" from="ShopLayer/Col1-2" to="ShopLayer" method="_on_hide_pressed"]
 [connection signal="pressed" from="ShopLayer/Col1-3" to="ShopLayer" method="_on_hide_pressed"]
 [connection signal="pressed" from="ShopLayer/Col1-4" to="ShopLayer" method="_on_hide_pressed"]

@@ -61,3 +61,8 @@ func _on_shop_pressed():
 func _on_hide_pressed():
 	self.hide()
 	get_node("../Timer").set_paused(false)
+
+
+func _on_col_11_pressed():
+	get_tree().call_group("world", "subtract", 30)
+	$"Col1-1".hide()

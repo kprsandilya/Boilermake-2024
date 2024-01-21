@@ -376,7 +376,7 @@ texture = ExtResource("1_rhk5s")
 [sub_resource type="TileSet" id="TileSet_3ebne"]
 sources/0 = SubResource("TileSetAtlasSource_8tcif")
 
-[node name="world" type="Node2D"]
+[node name="world" type="Node2D" groups=["world"]]
 position = Vector2(0, 1)
 script = ExtResource("1_ax3et")
 
