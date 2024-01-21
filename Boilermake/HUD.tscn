@@ -32,7 +32,7 @@ bg_color = Color(0.741176, 0.741176, 0.741176, 0.560784)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aurl8"]
 bg_color = Color(0.803922, 0.945098, 0.94902, 1)
 
-[node name="HUD" type="CanvasLayer"]
+[node name="HUD" type="CanvasLayer" groups=["HUD"]]
 script = ExtResource("1_spcts")
 
 [node name="Name" type="Label" parent="."]
@@ -73,12 +73,29 @@ anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -384.0
 offset_top = -130.0
+offset_right = -96.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_13yca")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_cxl3v")
+text = "TOOLS"
+
+[node name="Tools2" type="Label" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -96.0
+offset_top = -130.0
 offset_right = 192.0
 offset_bottom = -10.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("1_13yca")
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_cxl3v")
 text = "TOOLS"
 
@@ -135,10 +152,9 @@ text = "Shop"
 script = ExtResource("3_k6b8g")
 
 [node name="Menu" type="Label" parent="ShopLayer"]
-offset_left = 552.0
-offset_top = 1072.0
-offset_right = 2472.0
-offset_bottom = 2152.0
+offset_left = 8.0
+offset_right = 1928.0
+offset_bottom = 1080.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_8f402")
 
 [node name="Shop" type="Label" parent="ShopLayer"]
@@ -286,9 +302,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 76.0
+offset_left = 86.0
 offset_top = -180.0
-offset_right = 164.0
+offset_right = 174.0
 offset_bottom = -136.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -302,9 +318,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 76.0
+offset_left = 86.0
 offset_top = -100.0
-offset_right = 164.0
+offset_right = 174.0
 offset_bottom = -56.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -318,9 +334,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 76.0
+offset_left = 86.0
 offset_top = -28.0
-offset_right = 164.0
+offset_right = 174.0
 offset_bottom = 16.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -334,9 +350,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 76.0
+offset_left = 86.0
 offset_top = 44.0
-offset_right = 164.0
+offset_right = 174.0
 offset_bottom = 88.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -350,9 +366,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 76.0
+offset_left = 86.0
 offset_top = 116.0
-offset_right = 164.0
+offset_right = 174.0
 offset_bottom = 160.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -366,9 +382,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 76.0
+offset_left = 81.0
 offset_top = 188.0
-offset_right = 164.0
+offset_right = 169.0
 offset_bottom = 232.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -382,9 +398,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 486.0
+offset_left = 476.0
 offset_top = -180.0
-offset_right = 574.0
+offset_right = 564.0
 offset_bottom = -136.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -398,9 +414,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 486.0
+offset_left = 476.0
 offset_top = -100.0
-offset_right = 574.0
+offset_right = 564.0
 offset_bottom = -56.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -414,9 +430,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 486.0
+offset_left = 476.0
 offset_top = -28.0
-offset_right = 574.0
+offset_right = 564.0
 offset_bottom = 16.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -430,9 +446,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 486.0
+offset_left = 476.0
 offset_top = 44.0
-offset_right = 574.0
+offset_right = 564.0
 offset_bottom = 88.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -446,9 +462,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 486.0
+offset_left = 476.0
 offset_top = 116.0
-offset_right = 574.0
+offset_right = 564.0
 offset_bottom = 160.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -462,9 +478,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 486.0
+offset_left = 466.0
 offset_top = 188.0
-offset_right = 574.0
+offset_right = 554.0
 offset_bottom = 232.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -478,6 +494,7 @@ offset_top = 360.0
 offset_right = 584.0
 offset_bottom = 404.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+vertical_alignment = 1
 
 [node name="Item2" type="Label" parent="ShopLayer"]
 offset_left = 368.0
@@ -485,6 +502,7 @@ offset_top = 440.0
 offset_right = 584.0
 offset_bottom = 484.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+vertical_alignment = 1
 
 [node name="Item3" type="Label" parent="ShopLayer"]
 offset_left = 368.0
@@ -492,6 +510,7 @@ offset_top = 512.0
 offset_right = 584.0
 offset_bottom = 556.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+vertical_alignment = 1
 
 [node name="Item4" type="Label" parent="ShopLayer"]
 offset_left = 368.0
@@ -499,6 +518,7 @@ offset_top = 584.0
 offset_right = 584.0
 offset_bottom = 628.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+vertical_alignment = 1
 
 [node name="Item5" type="Label" parent="ShopLayer"]
 offset_left = 368.0
@@ -506,6 +526,7 @@ offset_top = 656.0
 offset_right = 584.0
 offset_bottom = 700.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+vertical_alignment = 1
 
 [node name="Item6" type="Label" parent="ShopLayer"]
 offset_left = 368.0
@@ -513,6 +534,7 @@ offset_top = 728.0
 offset_right = 584.0
 offset_bottom = 772.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+vertical_alignment = 1
 
 [node name="Item7" type="Label" parent="ShopLayer"]
 offset_left = 776.0
@@ -520,41 +542,47 @@ offset_top = 360.0
 offset_right = 992.0
 offset_bottom = 404.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+vertical_alignment = 1
 
 [node name="Item8" type="Label" parent="ShopLayer"]
-offset_left = 784.0
+offset_left = 776.0
 offset_top = 440.0
-offset_right = 1000.0
+offset_right = 992.0
 offset_bottom = 484.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+vertical_alignment = 1
 
 [node name="Item9" type="Label" parent="ShopLayer"]
-offset_left = 784.0
+offset_left = 776.0
 offset_top = 512.0
-offset_right = 1000.0
+offset_right = 992.0
 offset_bottom = 556.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+vertical_alignment = 1
 
 [node name="Item10" type="Label" parent="ShopLayer"]
-offset_left = 784.0
+offset_left = 776.0
 offset_top = 584.0
-offset_right = 1000.0
+offset_right = 992.0
 offset_bottom = 628.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+vertical_alignment = 1
 
 [node name="Item11" type="Label" parent="ShopLayer"]
-offset_left = 784.0
+offset_left = 776.0
 offset_top = 656.0
-offset_right = 1000.0
+offset_right = 992.0
 offset_bottom = 700.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+vertical_alignment = 1
 
 [node name="Item12" type="Label" parent="ShopLayer"]
-offset_left = 784.0
+offset_left = 776.0
 offset_top = 728.0
-offset_right = 1000.0
+offset_right = 992.0
 offset_bottom = 772.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+vertical_alignment = 1
 
 [node name="Item13" type="Label" parent="ShopLayer"]
 offset_left = 1186.0
@@ -562,6 +590,7 @@ offset_top = 360.0
 offset_right = 1402.0
 offset_bottom = 404.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+vertical_alignment = 1
 
 [node name="Item14" type="Label" parent="ShopLayer"]
 offset_left = 1186.0
@@ -569,6 +598,7 @@ offset_top = 440.0
 offset_right = 1402.0
 offset_bottom = 484.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+vertical_alignment = 1
 
 [node name="Item15" type="Label" parent="ShopLayer"]
 offset_left = 1186.0
@@ -576,6 +606,7 @@ offset_top = 512.0
 offset_right = 1402.0
 offset_bottom = 556.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+vertical_alignment = 1
 
 [node name="Item16" type="Label" parent="ShopLayer"]
 offset_left = 1186.0
@@ -583,6 +614,7 @@ offset_top = 584.0
 offset_right = 1402.0
 offset_bottom = 628.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+vertical_alignment = 1
 
 [node name="Item17" type="Label" parent="ShopLayer"]
 offset_left = 1186.0
@@ -590,6 +622,7 @@ offset_top = 656.0
 offset_right = 1402.0
 offset_bottom = 700.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+vertical_alignment = 1
 
 [node name="Item18" type="Label" parent="ShopLayer"]
 offset_left = 1186.0
@@ -597,25 +630,26 @@ offset_top = 728.0
 offset_right = 1402.0
 offset_bottom = 772.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+vertical_alignment = 1
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="Shop" to="ShopLayer" method="_on_shop_pressed"]
 [connection signal="pressed" from="ShopLayer/Hide" to="ShopLayer" method="_on_hide_pressed"]
 [connection signal="pressed" from="ShopLayer/Col1-1" to="ShopLayer" method="_on_col_11_pressed"]
-[connection signal="pressed" from="ShopLayer/Col1-2" to="ShopLayer" method="_on_hide_pressed"]
-[connection signal="pressed" from="ShopLayer/Col1-3" to="ShopLayer" method="_on_hide_pressed"]
-[connection signal="pressed" from="ShopLayer/Col1-4" to="ShopLayer" method="_on_hide_pressed"]
-[connection signal="pressed" from="ShopLayer/Col1-5" to="ShopLayer" method="_on_hide_pressed"]
-[connection signal="pressed" from="ShopLayer/Col1-6" to="ShopLayer" method="_on_hide_pressed"]
-[connection signal="pressed" from="ShopLayer/Col2-1" to="ShopLayer" method="_on_hide_pressed"]
-[connection signal="pressed" from="ShopLayer/Col2-2" to="ShopLayer" method="_on_hide_pressed"]
-[connection signal="pressed" from="ShopLayer/Col2-3" to="ShopLayer" method="_on_hide_pressed"]
-[connection signal="pressed" from="ShopLayer/Col2-4" to="ShopLayer" method="_on_hide_pressed"]
-[connection signal="pressed" from="ShopLayer/Col2-5" to="ShopLayer" method="_on_hide_pressed"]
-[connection signal="pressed" from="ShopLayer/Col2-6" to="ShopLayer" method="_on_hide_pressed"]
-[connection signal="pressed" from="ShopLayer/Col3-1" to="ShopLayer" method="_on_hide_pressed"]
-[connection signal="pressed" from="ShopLayer/Col3-2" to="ShopLayer" method="_on_hide_pressed"]
-[connection signal="pressed" from="ShopLayer/Col3-3" to="ShopLayer" method="_on_hide_pressed"]
-[connection signal="pressed" from="ShopLayer/Col3-4" to="ShopLayer" method="_on_hide_pressed"]
-[connection signal="pressed" from="ShopLayer/Col3-5" to="ShopLayer" method="_on_hide_pressed"]
-[connection signal="pressed" from="ShopLayer/Col3-6" to="ShopLayer" method="_on_hide_pressed"]
+[connection signal="pressed" from="ShopLayer/Col1-2" to="ShopLayer" method="_on_col_12_pressed"]
+[connection signal="pressed" from="ShopLayer/Col1-3" to="ShopLayer" method="_on_col_13_pressed"]
+[connection signal="pressed" from="ShopLayer/Col1-4" to="ShopLayer" method="_on_col_14_pressed"]
+[connection signal="pressed" from="ShopLayer/Col1-5" to="ShopLayer" method="_on_col_15_pressed"]
+[connection signal="pressed" from="ShopLayer/Col1-6" to="ShopLayer" method="_on_col_16_pressed"]
+[connection signal="pressed" from="ShopLayer/Col2-1" to="ShopLayer" method="_on_col_21_pressed"]
+[connection signal="pressed" from="ShopLayer/Col2-2" to="ShopLayer" method="_on_col_22_pressed"]
+[connection signal="pressed" from="ShopLayer/Col2-3" to="ShopLayer" method="_on_col_23_pressed"]
+[connection signal="pressed" from="ShopLayer/Col2-4" to="ShopLayer" method="_on_col_24_pressed"]
+[connection signal="pressed" from="ShopLayer/Col2-5" to="ShopLayer" method="_on_col_25_pressed"]
+[connection signal="pressed" from="ShopLayer/Col2-6" to="ShopLayer" method="_on_col_26_pressed"]
+[connection signal="pressed" from="ShopLayer/Col3-1" to="ShopLayer" method="_on_col_31_pressed"]
+[connection signal="pressed" from="ShopLayer/Col3-2" to="ShopLayer" method="_on_col_32_pressed"]
+[connection signal="pressed" from="ShopLayer/Col3-3" to="ShopLayer" method="_on_col_33_pressed"]
+[connection signal="pressed" from="ShopLayer/Col3-4" to="ShopLayer" method="_on_col_34_pressed"]
+[connection signal="pressed" from="ShopLayer/Col3-5" to="ShopLayer" method="_on_col_35_pressed"]
+[connection signal="pressed" from="ShopLayer/Col3-6" to="ShopLayer" method="_on_col_36_pressed"]
