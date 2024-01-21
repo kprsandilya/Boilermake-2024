@@ -184,12 +184,13 @@ func _input(event):
 				can_water = false
 				var number = 0
 				while can_water == false:
-					await get_tree().create_timer(10).timeout
-					background.set_cell(ground_layer, corn_tile_pos, source_id, stages[number])
+					number += 1
 					if number == 4:
 						can_water = true
-					number += 1
-				background.set_cell(ground_layer, corn_tile_pos, source_id, stages[4])
+						background.set_cell(ground_layer, corn_tile_pos, source_id, stages[4])
+					else:
+						await get_tree().create_timer(10).timeout
+						background.set_cell(ground_layer, corn_tile_pos, source_id, stages[number])
 					
 	if Input.is_action_just_pressed("water_carrot"):
 		tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
