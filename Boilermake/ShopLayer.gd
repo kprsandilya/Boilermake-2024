@@ -141,81 +141,93 @@ func _on_col_21_pressed():
 	get_tree().call_group("world", "subtract", name_array[6].to_int())
 	subtract(name_array[6].to_int())
 	$"Col2-1".hide()
-	prestige = 1
+	if (prestige < 1):
+		prestige = 1
 
 
 func _on_col_22_pressed():
 	get_tree().call_group("world", "subtract", name_array[7].to_int())
 	subtract(name_array[7].to_int())
 	$"Col2-2".hide()
-	prestige = 2
+	if (prestige < 2):
+		prestige = 2
 
 
 func _on_col_23_pressed():
 	get_tree().call_group("world", "subtract", name_array[8].to_int())
 	subtract(name_array[8].to_int())
 	$"Col2-3".hide()
-	prestige = 3
+	if (prestige < 3):
+		prestige = 3
 
 
 func _on_col_24_pressed():
 	get_tree().call_group("world", "subtract", name_array[9].to_int())
 	subtract(name_array[9].to_int())
 	$"Col2-4".hide()
-	prestige = 4
+	if (prestige < 4):
+		prestige = 4
 
 
 func _on_col_25_pressed():
 	get_tree().call_group("world", "subtract", name_array[10].to_int())
 	subtract(name_array[10].to_int())
 	$"Col2-5".hide()
-	prestige = 5
+	if (prestige < 5):
+		prestige = 5
 
 
 func _on_col_26_pressed():
 	get_tree().call_group("world", "subtract", name_array[11].to_int())
 	subtract(name_array[11].to_int())
 	$"Col2-6".hide()
-	prestige = 6
+	if (prestige < 6):
+		prestige = 6
 
 
 func _on_col_31_pressed():
 	get_tree().call_group("world", "subtract", name_array[12].to_int())
 	subtract(name_array[12].to_int())
 	$"Col3-1".hide()
-	prestige = 7
+	if (prestige < 7):
+		prestige = 7
 
 
 func _on_col_32_pressed():
 	get_tree().call_group("world", "subtract", name_array[13].to_int())
 	subtract(name_array[13].to_int())
 	$"Col3-2".hide()
-	prestige = 8
+	if (prestige < 8):
+		prestige = 8
 
 
 func _on_col_33_pressed():
 	get_tree().call_group("world", "subtract", name_array[14].to_int())
 	subtract(name_array[14].to_int())
 	$"Col3-3".hide()
-	prestige = 9
+	if (prestige < 9):
+		prestige = 9
 
 
 func _on_col_34_pressed():
 	get_tree().call_group("world", "subtract", name_array[15].to_int())
 	subtract(name_array[15].to_int())
 	$"Col3-4".hide()
-	prestige = 10
+	if (prestige < 10):
+		prestige = 10
 
 
 func _on_col_35_pressed():
 	get_tree().call_group("world", "subtract", name_array[16].to_int())
 	subtract(name_array[16].to_int())
 	$"Col3-5".hide()
-	prestige = 11
+	if (prestige < 11):
+		prestige = 11
 
 
 func _on_col_36_pressed():
 	get_tree().call_group("world", "subtract", name_array[17].to_int())
 	subtract(name_array[17].to_int())
 	$"Col3-6".hide()
-	prestige = 12
+	if (prestige < 12):
+		prestige = 12
