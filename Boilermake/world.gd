@@ -72,60 +72,78 @@ func _input(event):
 			if can_till:
 				background.set_cell(ground_layer, player_tile_pos, source_id, atlas_coord)
 	if Input.is_action_just_pressed("fertilize"):
-		tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
-		source_id = 0
-		atlas_coord = Vector2i(6, 9)
-		
-		if tile_data:
-			var can_fertilize = tile_data.get_custom_data(can_fertilize_custom_data)
-			if can_fertilize:
-				background.set_cell(ground_layer, player_tile_pos, source_id, atlas_coord)
+		if fertilizer > 0:
+			tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
+			source_id = 0
+			atlas_coord = Vector2i(6, 9)
+			
+			if tile_data:
+				var can_fertilize = tile_data.get_custom_data(can_fertilize_custom_data)
+				if can_fertilize:
+					get_tree().call_group("HUD", "subtract_item", 0)
+					fertilizer -= 1
+					background.set_cell(ground_layer, player_tile_pos, source_id, atlas_coord)
 			
 	if Input.is_action_just_pressed("plant_corn"):
-		tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
-		source_id = 0
-		atlas_coord = Vector2i(8, 7)
-		
-		if tile_data:
-			var can_seed_corn = tile_data.get_custom_data(can_seed_corn_custom_data)
-			if can_seed_corn:
-				background.set_cell(ground_layer, player_tile_pos, source_id, atlas_coord)
+		if seed_array[0] > 0:
+			tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
+			source_id = 0
+			atlas_coord = Vector2i(8, 7)
+			
+			if tile_data:
+				var can_seed_corn = tile_data.get_custom_data(can_seed_corn_custom_data)
+				if can_seed_corn:
+					get_tree().call_group("HUD", "subtract_item", 1)
+					seed_array[0] -= 1
+					background.set_cell(ground_layer, player_tile_pos, source_id, atlas_coord)
 	if Input.is_action_just_pressed("plant_carrot"):
-		tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
-		source_id = 0
-		atlas_coord = Vector2i(9, 8)
-		
-		if tile_data:
-			var can_seed_carrot = tile_data.get_custom_data(can_seed_carrot_custom_data)
-			if can_seed_carrot:
-				background.set_cell(ground_layer, player_tile_pos, source_id, atlas_coord)
+		if seed_array[1] > 0:
+			tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
+			source_id = 0
+			atlas_coord = Vector2i(9, 8)
+			
+			if tile_data:
+				var can_seed_carrot = tile_data.get_custom_data(can_seed_carrot_custom_data)
+				if can_seed_carrot:
+					get_tree().call_group("HUD", "subtract_item", 2)
+					seed_array[1] -= 1
+					background.set_cell(ground_layer, player_tile_pos, source_id, atlas_coord)
 	if Input.is_action_just_pressed("plant_turnip"):
-		tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
-		source_id = 0
-		atlas_coord = Vector2i(12, 9)
-		
-		if tile_data:
-			var can_seed_turnip = tile_data.get_custom_data(can_seed_turnip_custom_data)
-			if can_seed_turnip:
-				background.set_cell(ground_layer, player_tile_pos, source_id, atlas_coord)
+		if seed_array[2] > 0:
+			tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
+			source_id = 0
+			atlas_coord = Vector2i(12, 9)
+			
+			if tile_data:
+				var can_seed_turnip = tile_data.get_custom_data(can_seed_turnip_custom_data)
+				if can_seed_turnip:
+					get_tree().call_group("HUD", "subtract_item", 3)
+					seed_array[2] -= 1
+					background.set_cell(ground_layer, player_tile_pos, source_id, atlas_coord)
 	if Input.is_action_just_pressed("plant_strawberry"):
-		tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
-		source_id = 0
-		atlas_coord = Vector2i(6, 11)
-		
-		if tile_data:
-			var can_seed_strawberry = tile_data.get_custom_data(can_seed_strawberry_custom_data)
-			if can_seed_strawberry:
-				background.set_cell(ground_layer, player_tile_pos, source_id, atlas_coord)
+		if seed_array[3] > 0:
+			tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
+			source_id = 0
+			atlas_coord = Vector2i(6, 11)
+			
+			if tile_data:
+				var can_seed_strawberry = tile_data.get_custom_data(can_seed_strawberry_custom_data)
+				if can_seed_strawberry:
+					get_tree().call_group("HUD", "subtract_item", 4)
+					seed_array[3] -= 1
+					background.set_cell(ground_layer, player_tile_pos, source_id, atlas_coord)
 	if Input.is_action_just_pressed("plant_cabbage"):
-		tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
-		source_id = 0
-		atlas_coord = Vector2i(5, 12)
-		
-		if tile_data:
-			var can_seed_cabbage = tile_data.get_custom_data(can_seed_cabbage_custom_data)
-			if can_seed_cabbage:
-				background.set_cell(ground_layer, player_tile_pos, source_id, atlas_coord)
+		if seed_array[4] > 0:
+			tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
+			source_id = 0
+			atlas_coord = Vector2i(5, 12)
+			
+			if tile_data:
+				var can_seed_cabbage = tile_data.get_custom_data(can_seed_cabbage_custom_data)
+				if can_seed_cabbage:
+					get_tree().call_group("HUD", "subtractItem", 5)
+					seed_array[4] -= 1
+					background.set_cell(ground_layer, player_tile_pos, source_id, atlas_coord)
 	
 	if Input.is_action_just_pressed("water_corn"):
 		tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)

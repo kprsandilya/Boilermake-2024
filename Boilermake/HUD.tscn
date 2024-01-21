@@ -35,7 +35,7 @@ bg_color = Color(0.803922, 0.945098, 0.94902, 1)
 [node name="HUD" type="CanvasLayer" groups=["HUD"]]
 script = ExtResource("1_spcts")
 
-[node name="Name" type="Label" parent="."]
+[node name="Name" type="Label" parent="." groups=["HUD"]]
 offset_left = 1344.0
 offset_top = 10.0
 offset_right = 1537.0
@@ -46,7 +46,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_37tyo")
 text = "Name"
 vertical_alignment = 1
 
-[node name="Money" type="Label" parent="."]
+[node name="Money" type="Label" parent="." groups=["HUD"]]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -65,7 +65,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_37tyo")
 text = "Money: 
 Prestige: "
 
-[node name="Tools" type="Label" parent="."]
+[node name="Tools" type="Label" parent="." groups=["HUD"]]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -82,7 +82,7 @@ theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_cxl3v")
 text = "TOOLS"
 
-[node name="Tools2" type="Label" parent="."]
+[node name="Tools2" type="Label" parent="." groups=["HUD"]]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -99,7 +99,7 @@ theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_cxl3v")
 text = "TOOLS"
 
-[node name="Controls" type="Label" parent="."]
+[node name="Controls" type="Label" parent="." groups=["HUD"]]
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
@@ -121,7 +121,7 @@ W - Water
 H - Harvest"
 autowrap_mode = 3
 
-[node name="Time" type="Label" parent="."]
+[node name="Time" type="Label" parent="." groups=["HUD"]]
 offset_left = 1570.0
 offset_top = 10.0
 offset_right = 1910.0
@@ -132,10 +132,10 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_wpv6c")
 text = "Day:"
 vertical_alignment = 1
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Timer" type="Timer" parent="." groups=["HUD"]]
 wait_time = 10.0
 
-[node name="Shop" type="Button" parent="."]
+[node name="Shop" type="Button" parent="." groups=["HUD"]]
 offset_left = 10.0
 offset_top = 640.0
 offset_right = 230.0
@@ -148,16 +148,16 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_53om6")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_do3bd")
 text = "Shop"
 
-[node name="ShopLayer" type="CanvasLayer" parent="."]
+[node name="ShopLayer" type="CanvasLayer" parent="." groups=["HUD"]]
 script = ExtResource("3_k6b8g")
 
-[node name="Menu" type="Label" parent="ShopLayer"]
+[node name="Menu" type="Label" parent="ShopLayer" groups=["HUD"]]
 offset_left = 8.0
 offset_right = 1928.0
 offset_bottom = 1080.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_8f402")
 
-[node name="Shop" type="Label" parent="ShopLayer"]
+[node name="Shop" type="Label" parent="ShopLayer" groups=["HUD"]]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -171,7 +171,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_aurl8")
 
-[node name="ShopLabel" type="Label" parent="ShopLayer"]
+[node name="ShopLabel" type="Label" parent="ShopLayer" groups=["HUD"]]
 offset_left = 360.0
 offset_top = 280.0
 offset_right = 528.0
@@ -184,7 +184,7 @@ text = "Shop"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Hide" type="Button" parent="ShopLayer"]
+[node name="Hide" type="Button" parent="ShopLayer" groups=["HUD"]]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -200,7 +200,7 @@ theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
 
-[node name="Col1-1" type="Button" parent="ShopLayer"]
+[node name="Col1-1" type="Button" parent="ShopLayer" groups=["HUD"]]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -216,7 +216,7 @@ theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
 
-[node name="Col1-2" type="Button" parent="ShopLayer"]
+[node name="Col1-2" type="Button" parent="ShopLayer" groups=["HUD"]]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -232,7 +232,7 @@ theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
 
-[node name="Col1-3" type="Button" parent="ShopLayer"]
+[node name="Col1-3" type="Button" parent="ShopLayer" groups=["HUD"]]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -248,7 +248,7 @@ theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
 
-[node name="Col1-4" type="Button" parent="ShopLayer"]
+[node name="Col1-4" type="Button" parent="ShopLayer" groups=["HUD"]]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -264,7 +264,7 @@ theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
 
-[node name="Col1-5" type="Button" parent="ShopLayer"]
+[node name="Col1-5" type="Button" parent="ShopLayer" groups=["HUD"]]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -280,7 +280,7 @@ theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
 
-[node name="Col1-6" type="Button" parent="ShopLayer"]
+[node name="Col1-6" type="Button" parent="ShopLayer" groups=["HUD"]]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -296,7 +296,7 @@ theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
 
-[node name="Col2-1" type="Button" parent="ShopLayer"]
+[node name="Col2-1" type="Button" parent="ShopLayer" groups=["HUD"]]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -312,7 +312,7 @@ theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
 
-[node name="Col2-2" type="Button" parent="ShopLayer"]
+[node name="Col2-2" type="Button" parent="ShopLayer" groups=["HUD"]]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -328,7 +328,7 @@ theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
 
-[node name="Col2-3" type="Button" parent="ShopLayer"]
+[node name="Col2-3" type="Button" parent="ShopLayer" groups=["HUD"]]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -344,7 +344,7 @@ theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
 
-[node name="Col2-4" type="Button" parent="ShopLayer"]
+[node name="Col2-4" type="Button" parent="ShopLayer" groups=["HUD"]]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -360,7 +360,7 @@ theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
 
-[node name="Col2-5" type="Button" parent="ShopLayer"]
+[node name="Col2-5" type="Button" parent="ShopLayer" groups=["HUD"]]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -376,7 +376,7 @@ theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
 
-[node name="Col2-6" type="Button" parent="ShopLayer"]
+[node name="Col2-6" type="Button" parent="ShopLayer" groups=["HUD"]]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -392,7 +392,7 @@ theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
 
-[node name="Col3-1" type="Button" parent="ShopLayer"]
+[node name="Col3-1" type="Button" parent="ShopLayer" groups=["HUD"]]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -408,7 +408,7 @@ theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
 
-[node name="Col3-2" type="Button" parent="ShopLayer"]
+[node name="Col3-2" type="Button" parent="ShopLayer" groups=["HUD"]]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -424,7 +424,7 @@ theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
 
-[node name="Col3-3" type="Button" parent="ShopLayer"]
+[node name="Col3-3" type="Button" parent="ShopLayer" groups=["HUD"]]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -440,7 +440,7 @@ theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
 
-[node name="Col3-4" type="Button" parent="ShopLayer"]
+[node name="Col3-4" type="Button" parent="ShopLayer" groups=["HUD"]]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -456,7 +456,7 @@ theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
 
-[node name="Col3-5" type="Button" parent="ShopLayer"]
+[node name="Col3-5" type="Button" parent="ShopLayer" groups=["HUD"]]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -472,7 +472,7 @@ theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
 
-[node name="Col3-6" type="Button" parent="ShopLayer"]
+[node name="Col3-6" type="Button" parent="ShopLayer" groups=["HUD"]]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -488,7 +488,7 @@ theme_override_fonts/font = ExtResource("1_13yca")
 theme_override_font_sizes/font_size = 16
 text = "Hide"
 
-[node name="Item1" type="Label" parent="ShopLayer"]
+[node name="Item1" type="Label" parent="ShopLayer" groups=["HUD"]]
 offset_left = 368.0
 offset_top = 360.0
 offset_right = 584.0
@@ -496,7 +496,7 @@ offset_bottom = 404.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 vertical_alignment = 1
 
-[node name="Item2" type="Label" parent="ShopLayer"]
+[node name="Item2" type="Label" parent="ShopLayer" groups=["HUD"]]
 offset_left = 368.0
 offset_top = 440.0
 offset_right = 584.0
@@ -504,7 +504,7 @@ offset_bottom = 484.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 vertical_alignment = 1
 
-[node name="Item3" type="Label" parent="ShopLayer"]
+[node name="Item3" type="Label" parent="ShopLayer" groups=["HUD"]]
 offset_left = 368.0
 offset_top = 512.0
 offset_right = 584.0
@@ -512,7 +512,7 @@ offset_bottom = 556.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 vertical_alignment = 1
 
-[node name="Item4" type="Label" parent="ShopLayer"]
+[node name="Item4" type="Label" parent="ShopLayer" groups=["HUD"]]
 offset_left = 368.0
 offset_top = 584.0
 offset_right = 584.0
@@ -520,7 +520,7 @@ offset_bottom = 628.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 vertical_alignment = 1
 
-[node name="Item5" type="Label" parent="ShopLayer"]
+[node name="Item5" type="Label" parent="ShopLayer" groups=["HUD"]]
 offset_left = 368.0
 offset_top = 656.0
 offset_right = 584.0
@@ -528,7 +528,7 @@ offset_bottom = 700.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 vertical_alignment = 1
 
-[node name="Item6" type="Label" parent="ShopLayer"]
+[node name="Item6" type="Label" parent="ShopLayer" groups=["HUD"]]
 offset_left = 368.0
 offset_top = 728.0
 offset_right = 584.0
@@ -536,7 +536,7 @@ offset_bottom = 772.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 vertical_alignment = 1
 
-[node name="Item7" type="Label" parent="ShopLayer"]
+[node name="Item7" type="Label" parent="ShopLayer" groups=["HUD"]]
 offset_left = 776.0
 offset_top = 360.0
 offset_right = 992.0
@@ -544,7 +544,7 @@ offset_bottom = 404.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 vertical_alignment = 1
 
-[node name="Item8" type="Label" parent="ShopLayer"]
+[node name="Item8" type="Label" parent="ShopLayer" groups=["HUD"]]
 offset_left = 776.0
 offset_top = 440.0
 offset_right = 992.0
@@ -552,7 +552,7 @@ offset_bottom = 484.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 vertical_alignment = 1
 
-[node name="Item9" type="Label" parent="ShopLayer"]
+[node name="Item9" type="Label" parent="ShopLayer" groups=["HUD"]]
 offset_left = 776.0
 offset_top = 512.0
 offset_right = 992.0
@@ -560,7 +560,7 @@ offset_bottom = 556.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 vertical_alignment = 1
 
-[node name="Item10" type="Label" parent="ShopLayer"]
+[node name="Item10" type="Label" parent="ShopLayer" groups=["HUD"]]
 offset_left = 776.0
 offset_top = 584.0
 offset_right = 992.0
@@ -568,7 +568,7 @@ offset_bottom = 628.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 vertical_alignment = 1
 
-[node name="Item11" type="Label" parent="ShopLayer"]
+[node name="Item11" type="Label" parent="ShopLayer" groups=["HUD"]]
 offset_left = 776.0
 offset_top = 656.0
 offset_right = 992.0
@@ -576,7 +576,7 @@ offset_bottom = 700.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 vertical_alignment = 1
 
-[node name="Item12" type="Label" parent="ShopLayer"]
+[node name="Item12" type="Label" parent="ShopLayer" groups=["HUD"]]
 offset_left = 776.0
 offset_top = 728.0
 offset_right = 992.0
@@ -584,7 +584,7 @@ offset_bottom = 772.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 vertical_alignment = 1
 
-[node name="Item13" type="Label" parent="ShopLayer"]
+[node name="Item13" type="Label" parent="ShopLayer" groups=["HUD"]]
 offset_left = 1186.0
 offset_top = 360.0
 offset_right = 1402.0
@@ -592,7 +592,7 @@ offset_bottom = 404.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 vertical_alignment = 1
 
-[node name="Item14" type="Label" parent="ShopLayer"]
+[node name="Item14" type="Label" parent="ShopLayer" groups=["HUD"]]
 offset_left = 1186.0
 offset_top = 440.0
 offset_right = 1402.0
@@ -600,7 +600,7 @@ offset_bottom = 484.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 vertical_alignment = 1
 
-[node name="Item15" type="Label" parent="ShopLayer"]
+[node name="Item15" type="Label" parent="ShopLayer" groups=["HUD"]]
 offset_left = 1186.0
 offset_top = 512.0
 offset_right = 1402.0
@@ -608,7 +608,7 @@ offset_bottom = 556.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 vertical_alignment = 1
 
-[node name="Item16" type="Label" parent="ShopLayer"]
+[node name="Item16" type="Label" parent="ShopLayer" groups=["HUD"]]
 offset_left = 1186.0
 offset_top = 584.0
 offset_right = 1402.0
@@ -616,7 +616,7 @@ offset_bottom = 628.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 vertical_alignment = 1
 
-[node name="Item17" type="Label" parent="ShopLayer"]
+[node name="Item17" type="Label" parent="ShopLayer" groups=["HUD"]]
 offset_left = 1186.0
 offset_top = 656.0
 offset_right = 1402.0
@@ -624,7 +624,7 @@ offset_bottom = 700.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 vertical_alignment = 1
 
-[node name="Item18" type="Label" parent="ShopLayer"]
+[node name="Item18" type="Label" parent="ShopLayer" groups=["HUD"]]
 offset_left = 1186.0
 offset_top = 728.0
 offset_right = 1402.0

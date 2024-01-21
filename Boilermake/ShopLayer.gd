@@ -58,12 +58,13 @@ func _ready():
 func _process(delta):
 	get_node("../" + "Money").text = str("Money: " + str(player_1_money) + "\n"
 											+ "Prestige: " + str(prestige))
-	get_node("../" + "Tools").text = str("Fertilizer: " + str(fertilizer) + "\n"
-											+ "Corn: " + str(seed_array[0]) + "\n"
-											+ "Carrot: " + str(seed_array[1]) + "\n")
-	get_node("../" + "Tools2").text = str("Turnip: " + str(seed_array[2]) + "\n"
-											+ "Cabbage: " + str(seed_array[3]) + "\n"
-											+ "Strawberry: " + str(seed_array[4]) + "\n")
+	get_node("../" + "Tools").text = str("Keybinds/Amounts\n"
+											+ "F - Fertilizer: " + str(fertilizer) + "\n"
+											+ "1 - Corn: " + str(seed_array[0]) + "\n"
+											+ "2 - Carrot: " + str(seed_array[1]) + "\n")
+	get_node("../" + "Tools2").text = str("\n3 - Turnip: " + str(seed_array[2]) + "\n"
+											+ "4 - Cabbage: " + str(seed_array[3]) + "\n"
+											+ "5 - Strawberry: " + str(seed_array[4]) + "\n")
 func subtract(amount):
 	match(amount):
 		10:
@@ -81,7 +82,7 @@ func subtract(amount):
 	if (player_1_money - amount >= 0):
 		player_1_money -= amount
 
-func substract_item(index):
+func subtract_item(index):
 	if (index == 0):
 		fertilizer -= 1
 	match (index):
