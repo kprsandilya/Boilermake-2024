@@ -19,7 +19,7 @@ var can_water_turnip_custom_data = "can_water_turnip"
 var can_water_strawberry_custom_data = "can_water_strawberry"
 var can_water_cabbage_custom_data = "can_water_cabbage"
 
-var player_1_money = 100
+var player_1_money = 10000000
 var fertilizer = 0
 var prestige = 0
 var seed_array = [0,0,0,0,0]
@@ -30,28 +30,25 @@ func _ready():
 	pass
 
 func subtract(amount):
-	match(amount):
-		10:
-			fertilizer += 1
-		25:
-			seed_array[0] += 1
-		30:
-			seed_array[1] += 1
-		40:
-			seed_array[2] += 1
-		55:
-			seed_array[3] += 1
-		75:
-			seed_array[4] += 1
 	if (player_1_money - amount >= 0):
 		player_1_money -= amount
+		match(amount):
+			10:
+				fertilizer += 1
+			25:
+				seed_array[0] += 1
+			30:
+				seed_array[1] += 1
+			40:
+				seed_array[2] += 1
+			55:
+				seed_array[3] += 1
+			75:
+				seed_array[4] += 1
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	_input(delta)
-	
-func return_money():
-	return player_1_money
 
 func _input(event):
 	total_time += str(event).to_float()
@@ -141,7 +138,7 @@ func _input(event):
 			if tile_data:
 				var can_seed_cabbage = tile_data.get_custom_data(can_seed_cabbage_custom_data)
 				if can_seed_cabbage:
-					get_tree().call_group("HUD", "subtractItem", 5)
+					get_tree().call_group("HUD", "subtract_item", 5)
 					seed_array[4] -= 1
 					background.set_cell(ground_layer, player_tile_pos, source_id, atlas_coord)
 	

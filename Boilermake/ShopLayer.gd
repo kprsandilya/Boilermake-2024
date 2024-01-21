@@ -66,21 +66,21 @@ func _process(delta):
 											+ "4 - Cabbage: " + str(seed_array[3]) + "\n"
 											+ "5 - Strawberry: " + str(seed_array[4]) + "\n")
 func subtract(amount):
-	match(amount):
-		10:
-			fertilizer += 1
-		25:
-			seed_array[0] += 1
-		30:
-			seed_array[1] += 1
-		40:
-			seed_array[2] += 1
-		55:
-			seed_array[3] += 1
-		75:
-			seed_array[4] += 1
 	if (player_1_money - amount >= 0):
 		player_1_money -= amount
+		match(amount):
+			10:
+				fertilizer += 1
+			25:
+				seed_array[0] += 1
+			30:
+				seed_array[1] += 1
+			40:
+				seed_array[2] += 1
+			55:
+				seed_array[3] += 1
+			75:
+				seed_array[4] += 1
 
 func subtract_item(index):
 	if (index == 0):
