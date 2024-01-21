@@ -16,3 +16,7 @@ Sandi Kambhampati, Shivam Patel, Shahan Suthaharan
  - If you have enough money, you can buy levels of prestige. This will exponentially increase any earnings from harvesting.
  - It will rain at random intervals, halving the amount of time it takes for plants to grow. Stay on your toes!
  - That's it, you're all set to play! Happy harvesting!
+
+## Credits
+
+Assets from josie make stuff - https://josie-makes-stuff.itch.io/pixel-art-farming-assets
