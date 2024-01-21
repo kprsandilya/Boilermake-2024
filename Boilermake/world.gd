@@ -35,7 +35,7 @@ func _ready():
 	$Timer.start()
 
 func time():
-	if ($Timer.get_time_left() < 1.05):
+	if ($Timer.get_time_left() < 10.5):
 		$background.set_layer_enabled(1, true)
 	else:
 		$background.set_layer_enabled(1, false)
@@ -79,12 +79,7 @@ func _input(event):
 	
 	var loop_number = 1
 	
-	#if $Timer.timeout():
-		#loop_number += 1
-		#$background.set_layer_enabled(1, true)
-		#await enable.timeout
-	#else:
-		#$background.set_layer_enabled(1, false)
+
 	
 	if Input.is_action_just_pressed("till"):
 		
