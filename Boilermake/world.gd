@@ -289,8 +289,8 @@ func _input(event):
 		if tile_data:
 			var can_harvest_corn = tile_data.get_custom_data(can_harvest_corn_custom_data)
 			if can_harvest_corn:
-				get_tree().call_group("HUD", "add_money", 50)
-				player_1_money += 50
+				get_tree().call_group("HUD", "add_money", 50 * (pow(1.01, prestige)))
+				player_1_money += 50 * (pow(1.01, prestige))
 				background.set_cell(ground_layer, corn_tile_pos, source_id, atlas_coord)
 	
 	if Input.is_action_just_pressed("harvest_carrot"):
@@ -302,8 +302,8 @@ func _input(event):
 		if tile_data:
 			var can_harvest_carrot = tile_data.get_custom_data(can_harvest_carrot_custom_data)
 			if can_harvest_carrot:
-				get_tree().call_group("HUD", "add_money", 60)
-				player_1_money += 60
+				get_tree().call_group("HUD", "add_money", 60 * (pow(1.01, prestige)))
+				player_1_money += 60 * (pow(1.01, prestige))
 				background.set_cell(ground_layer, carrot_tile_pos, source_id, atlas_coord)
 	
 	if Input.is_action_just_pressed("harvest_turnip"):
@@ -315,8 +315,8 @@ func _input(event):
 		if tile_data:
 			var can_harvest_turnip = tile_data.get_custom_data(can_harvest_turnip_custom_data)
 			if can_harvest_turnip:
-				get_tree().call_group("HUD", "add_money", 80)
-				player_1_money += 80
+				get_tree().call_group("HUD", "add_money", 80 * (pow(1.01, prestige)))
+				player_1_money += 80 * (pow(1.01, prestige))
 				background.set_cell(ground_layer, turnip_tile_pos, source_id, atlas_coord)
 				
 	if Input.is_action_just_pressed("harvest_cabbage"):
@@ -328,8 +328,8 @@ func _input(event):
 		if tile_data:
 			var can_harvest_cabbage = tile_data.get_custom_data(can_harvest_cabbage_custom_data)
 			if can_harvest_cabbage:
-				get_tree().call_group("HUD", "add_money", 110)
-				player_1_money += 110
+				get_tree().call_group("HUD", "add_money", 110 * (pow(1.01, prestige)))
+				player_1_money += 110 * (pow(1.01, prestige))
 				background.set_cell(ground_layer, cabbage_tile_pos, source_id, atlas_coord)
 				
 	if Input.is_action_just_pressed("harvest_strawberry"):
@@ -341,6 +341,6 @@ func _input(event):
 		if tile_data:
 			var can_harvest_strawberry = tile_data.get_custom_data(can_harvest_strawberry_custom_data)
 			if can_harvest_strawberry:
-				get_tree().call_group("HUD", "add_money", 150)
-				player_1_money += 150
+				get_tree().call_group("HUD", "add_money", 150 * (pow(1.01, prestige)))
+				player_1_money += 150 * (pow(1.01, prestige))
 				background.set_cell(ground_layer, strawberry_tile_pos, source_id, atlas_coord)
