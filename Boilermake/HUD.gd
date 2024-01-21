@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-var day = 99
+var day = 0
 var char_name = "Timmy"
 var nameId = 0;
 
