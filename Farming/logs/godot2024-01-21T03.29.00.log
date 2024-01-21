@@ -1,9 +1,0 @@
-Godot Engine v4.2.1.stable.official.b09f793f5 - https://godotengine.org
-Vulkan API 1.3.242 - Forward+ - Using Vulkan Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
- 
-USER ERROR: res://world.tscn:205 - Parse Error: Expected value, got '='.
-   at: load (scene/resources/resource_format_text.cpp:595)
-USER ERROR: Failed loading resource: res://world.tscn. Make sure resources have been imported by opening the project in the editor at least once.
-   at: _load (core/io/resource_loader.cpp:274)
-USER ERROR: Failed loading scene: res://world.tscn.
-   at: start (main/main.cpp:3431)

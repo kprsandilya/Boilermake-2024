@@ -52,7 +52,7 @@ func _ready():
 		get_node("./" + "Col3-" + str(i)).text = "Purchase $: " + name_array[i+11]
 	for i in range(1,19):
 		get_node("./" + "Item" + str(i)).text = item_array[i-1]
-	self.hide()	
+	self.hide()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -109,7 +109,7 @@ func _on_hide_pressed():
 	get_node("../Timer").set_paused(false)
 
 func add_money(amount):
-	player_1_money += amount
+	player_1_money += int(amount)
 
 func _on_col_11_pressed():
 	get_tree().call_group("world", "subtract", name_array[0].to_int())
