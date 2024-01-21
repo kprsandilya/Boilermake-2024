@@ -1,25 +1,6 @@
-[gd_resource type="AnimatedTexture" load_steps=5 format=3 uid="uid://dyt40hix3im3q"]
-
-[ext_resource type="Texture2D" uid="uid://bq5kxbpfmuj3w" path="res://farmingTilesheetComplete.png" id="1_sbgvc"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_a56ip"]
-atlas = ExtResource("1_sbgvc")
-region = Rect2(176, 80, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_i8872"]
-atlas = ExtResource("1_sbgvc")
-region = Rect2(160, 80, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5w7qh"]
-atlas = ExtResource("1_sbgvc")
-region = Rect2(32, 144, 16, 16)
+[gd_resource type="AnimatedTexture" format=3 uid="uid://dyt40hix3im3q"]
 
 [resource]
 frames = 3
-speed_scale = 5.0
-frame_0/texture = SubResource("AtlasTexture_a56ip")
-frame_0/duration = 1.66
-frame_1/texture = SubResource("AtlasTexture_i8872")
-frame_1/duration = 1.67
-frame_2/texture = SubResource("AtlasTexture_5w7qh")
-frame_2/duration = 1.66
+frame_1/duration = 1.0
+frame_2/duration = 1.0

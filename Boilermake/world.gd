@@ -18,6 +18,11 @@ var can_water_carrot_custom_data = "can_water_carrot"
 var can_water_turnip_custom_data = "can_water_turnip"
 var can_water_strawberry_custom_data = "can_water_strawberry"
 var can_water_cabbage_custom_data = "can_water_cabbage"
+var can_harvest_corn_custom_data = "can_harvest_corn"
+var can_harvest_carrot_custom_data = "can_harvest_carrot"
+var can_harvest_turnip_custom_data = "can_harvest_turnip"
+var can_harvest_cabbage_custom_data = "can_harvest_cabbage"
+var can_harvest_strawberry_custom_data = "can_harvest_strawberry"
 
 var player_1_money = 10000000
 var fertilizer = 0
@@ -275,3 +280,73 @@ func _input(event):
 						can_water = true
 					number += 1
 				background.set_cell(ground_layer, cabbage_tile_pos, source_id, stages[4])
+	
+	if Input.is_action_just_pressed("harvest_corn"):
+		tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
+		source_id = 0
+		var corn_tile_pos = player_tile_pos
+		atlas_coord = Vector2i(6, 7)
+		
+		if tile_data:
+			var can_harvest_corn = tile_data.get_custom_data(can_harvest_corn_custom_data)
+			if can_harvest_corn:
+				get_tree().call_group("HUD", "add_money", 50)
+				player_1_money += 50
+				background.set_cell(ground_layer, corn_tile_pos, source_id, atlas_coord)
+	
+	if Input.is_action_just_pressed("harvest_carrot"):
+		tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
+		source_id = 0
+		var carrot_tile_pos = player_tile_pos
+		atlas_coord = Vector2i(6, 7)
+		
+		if tile_data:
+			var can_harvest_carrot = tile_data.get_custom_data(can_harvest_carrot_custom_data)
+			if can_harvest_carrot:
+				get_tree().call_group("HUD", "add_money", 60)
+				player_1_money += 60
+				background.set_cell(ground_layer, carrot_tile_pos, source_id, atlas_coord)
+	
+	if Input.is_action_just_pressed("harvest_turnip"):
+		tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
+		source_id = 0
+		var turnip_tile_pos = player_tile_pos
+		atlas_coord = Vector2i(6, 7)
+		
+		if tile_data:
+			var can_harvest_turnip = tile_data.get_custom_data(can_harvest_turnip_custom_data)
+			if can_harvest_turnip:
+				get_tree().call_group("HUD", "add_money", 80)
+				player_1_money += 80
+				background.set_cell(ground_layer, turnip_tile_pos, source_id, atlas_coord)
+				
+	if Input.is_action_just_pressed("harvest_cabbage"):
+		tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
+		source_id = 0
+		var cabbage_tile_pos = player_tile_pos
+		atlas_coord = Vector2i(6, 7)
+		
+		if tile_data:
+			var can_harvest_cabbage = tile_data.get_custom_data(can_harvest_cabbage_custom_data)
+			if can_harvest_cabbage:
+				get_tree().call_group("HUD", "add_money", 110)
+				player_1_money += 110
+				background.set_cell(ground_layer, cabbage_tile_pos, source_id, atlas_coord)
+				
+	if Input.is_action_just_pressed("harvest_strawberry"):
+		tile_data = background.get_cell_tile_data(ground_layer, player_tile_pos)
+		source_id = 0
+		var strawberry_tile_pos = player_tile_pos
+		atlas_coord = Vector2i(6, 7)
+		
+		if tile_data:
+			var can_harvest_strawberry = tile_data.get_custom_data(can_harvest_strawberry_custom_data)
+			if can_harvest_strawberry:
+				get_tree().call_group("HUD", "add_money", 150)
+				player_1_money += 150
+				background.set_cell(ground_layer, strawberry_tile_pos, source_id, atlas_coord)
+	
+	
+	
+	
+
