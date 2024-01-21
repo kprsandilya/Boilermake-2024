@@ -120,6 +120,7 @@ texture = ExtResource("1_rhk5s")
 6:7/0/custom_data_0 = true
 7:7/0 = 0
 8:7/0 = 0
+8:7/0/custom_data_4 = true
 9:7/0 = 0
 10:7/0 = 0
 11:7/0 = 0
@@ -199,12 +200,16 @@ custom_data_layer_2/name = "can_seed_corn"
 custom_data_layer_2/type = 1
 custom_data_layer_3/name = "can_seed_carrot"
 custom_data_layer_3/type = 1
-custom_data_layer_4/name = "can_water"
+custom_data_layer_4/name = "can_water_corn"
 custom_data_layer_4/type = 1
 custom_data_layer_5/name = "can_harvest"
 custom_data_layer_5/type = 1
 custom_data_layer_6/name = "can_seed_turnip"
 custom_data_layer_6/type = 1
+custom_data_layer_7/name = "can_water_carrot"
+custom_data_layer_7/type = 1
+custom_data_layer_8/name = "can_water_turnip"
+custom_data_layer_8/type = 1
 sources/0 = SubResource("TileSetAtlasSource_dwlg6")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8tcif"]
